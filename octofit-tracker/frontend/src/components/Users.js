@@ -1,4 +1,6 @@
 
+import { useEffect, useState } from 'react';
+
 const Users = () => {
   const [users, setUsers] = useState([]);
   const endpoint = `${process.env.REACT_APP_CODESPACE_NAME ? `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/users/` : '/api/users/'}`;
